@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palo Alto Networks + AWS Yacht Event</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #000;
+      color: #fff;
+    }
+    header {
+      background: linear-gradient(135deg, #ff4f1f, #ff764e);
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0;
+    }
+    .section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .logos {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    form {
+      background: #111;
+      padding: 2rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+    form label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 4px;
+      border: none;
+      margin-bottom: 1rem;
+    }
+    form button {
+      background: #ff4f1f;
+      color: #fff;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .footer {
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Set Sail with Security: An Exclusive Yacht Experience</h1>
+    <p>Wednesday, June 25 | 5:00 PM – 9:00 PM EST | Riverwalk Linear Park, Fort Lauderdale, FL</p>
+  </header>
+
+  <div class="section">
+    <p>Join Palo Alto Networks and AWS for an exclusive yacht event designed to show our appreciation for you—our valued customer, or potential new customers—and bring together cloud and security leaders for an afternoon of networking, innovation, and connection. As we cruise the coastline aboard the 100-foot superyacht <strong>Redemption</strong>, we’ll explore how our partnership is helping organizations like yours navigate the evolving landscape of AI and cloud security. Enjoy great conversations, stunning views, and a chance to learn how AWS and Palo Alto Networks are working together to deliver smarter, more secure solutions that drive business forward.</p>
+    <div class="logos">
+      <img src="https://brands.home.paloaltonetworks.com/wp-content/uploads/2022/07/Color-PAN-Logo-1.png" alt="Palo Alto Networks" height="40">
+      <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="AWS" height="40">
+    </div>
+
+    <form action="#" method="POST">
+      <label>First Name *</label>
+      <input type="text" name="first_name" required>
+
+      <label>Last Name *</label>
+      <input type="text" name="last_name" required>
+
+      <label>Business Email *</label>
+      <input type="email" name="email" required>
+
+      <label>Company *</label>
+      <input type="text" name="company" required>
+
+      <label>Job Level *</label>
+      <select name="job_level" required>
+        <option value="">Please Select Job Level</option>
+        <option value="Manager">Manager</option>
+        <option value="Director">Director</option>
+        <option value="VP">VP</option>
+        <option value="C-Level">C-Level</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label>Business Phone *</label>
+      <input type="tel" name="phone" required>
+
+      <label>Country *</label>
+      <input type="text" name="country" required>
+
+      <label>Do you have any food allergies or other dietary considerations?</label>
+      <textarea name="diet"></textarea>
+
+      <label>How did you hear about the event?</label>
+      <input type="text" name="referral">
+
+      <label><input type="checkbox" name="optin"> Send me updates on threat research, news, and events</label>
+
+      <label><input type="checkbox" required> I'm not a robot</label>
+
+      <button type="submit">SUBMIT</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>This event includes complimentary food and beverages. By attending, the recipient acknowledges their attendance does not violate any rules or regulations set out by their employer.</p>
+  </div>
+</body>
+</html>
